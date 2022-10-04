@@ -37,30 +37,7 @@ begin
   self.CalcularConsumo
 end;
 
-<<<<<<< HEAD
-   if edtHoras.Text = '' then
-   ShowMessage('Favor Digite uma Hora válida!!');
-   if xHoras = 0 then
-   ShowMessage('Favor Digite uma Hora válida!!');
 
-   if rgConsumo.ItemIndex = 0 then
-   begin
-    xResult:= xHoras * 0.60;
-    ShowMessage('Consumo Residência: R$ ' + CurrToStr(xResult));
-   end;
-
-   if rgConsumo.ItemIndex = 1 then
-   begin
-    xResult:= xHoras * 0.48;
-    ShowMessage('Consumo Comércio : R$' + CurrToStr(xResult));
-   end;
-
-     if rgConsumo.ItemIndex = 2 then
-   begin
-    xResult:= xHoras * 1.29;
-    ShowMessage('Consumo Industria : R$ ' + CurrToStr(xResult));
-   end;
-=======
 procedure TfrmConsumo.CalcularConsumo;
 var
   xHoras, xDesconto, xResult : Currency;
@@ -74,7 +51,7 @@ begin
        xResult:= (xHoras * 0.60)- xDesconto;
        ShowMessage('Consumo Residência: R$ ' + CurrToStr(xResult));
     end;
->>>>>>> 5db0bb57c853a587b9a03125ca6de04b865be9e4
+
 
     opComercio   :
     begin
@@ -82,8 +59,7 @@ begin
       ShowMessage('Consumo Comércio : R$' + CurrToStr(xResult));
     end;
 
-<<<<<<< HEAD
-=======
+
     opIndustria  :
     begin
       xResult:= (xHoras * 1.29)- xDesconto;
@@ -101,7 +77,6 @@ begin
   end
   else
     ShowMessage('Valor Inválido');
->>>>>>> 5db0bb57c853a587b9a03125ca6de04b865be9e4
 end;
 
 end.
