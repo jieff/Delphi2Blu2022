@@ -2,13 +2,13 @@ program ContaDeLuz;
 
 uses
   Vcl.Forms,
-  uFormPrincipal in 'uFormPrincipal.pas' {Form1};
+  uFormPrincipal in 'uFormPrincipal.pas' {frmConsumo};
 
 {$R *.res}
 
 begin
   Application.Initialize;
   Application.MainFormOnTaskbar := True;
-  Application.CreateForm(TForm1, Form1);
+  Application.CreateForm(TfrmConsumo, frmConsumo);
   Application.Run;
 end.
