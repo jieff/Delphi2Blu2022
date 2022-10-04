@@ -33,9 +33,10 @@ var
 begin
   xHoras:= StrToInt(edtHoras.Text);
 
-
-  if xHoras = 0 then
-    ShowMessage('Favor Digite uma Hora válida!!');
+   if edtHoras.Text = '' then
+   ShowMessage('Favor Digite uma Hora válida!!');
+   if xHoras = 0 then
+   ShowMessage('Favor Digite uma Hora válida!!');
 
    if rgConsumo.ItemIndex = 0 then
    begin
@@ -54,7 +55,6 @@ begin
     xResult:= xHoras * 1.29;
     ShowMessage('Consumo Industria : R$ ' + CurrToStr(xResult));
    end;
-
 
 
 end;
