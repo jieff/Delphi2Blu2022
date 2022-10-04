@@ -7,15 +7,20 @@ uses
   Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.ExtCtrls;
 
 type
+  TEnumCliente = (opResidencia, opComercio, opIndustria, opFazenda);
   TfrmConsumo = class(TForm)
     rgConsumo: TRadioGroup;
     btbConsumo: TButton;
     edtHoras: TEdit;
     Label1: TLabel;
     lblResultado: TLabel;
+    Label2: TLabel;
+    edtDesconto: TEdit;
+    Label3: TLabel;
     procedure btbConsumoClick(Sender: TObject);
   private
     { Private declarations }
+    procedure CalcularConsumo;
   public
     { Public declarations }
   end;
@@ -28,35 +33,47 @@ implementation
 {$R *.dfm}
 
 procedure TfrmConsumo.btbConsumoClick(Sender: TObject);
-var
-  xHoras, xResult : Currency;
 begin
-  xHoras:= StrToInt(edtHoras.Text);
+  self.CalcularConsumo
+end;
 
+procedure TfrmConsumo.CalcularConsumo;
+var
+  xHoras, xDesconto, xResult : Currency;
+begin
+  if (TryStrToCurr(edtDesconto.Text, xDesconto)) and (TryStrToCurr(edtHoras.Text, xHoras)) then
+  begin
 
-  if xHoras = 0 then
-    ShowMessage('Favor Digite uma Hora válida!!');
+  case TEnumCliente(rgConsumo.ItemIndex) of
+    opResidencia :
+    begin
+       xResult:= (xHoras * 0.60)- xDesconto;
+       ShowMessage('Consumo Residência: R$ ' + CurrToStr(xResult));
+    end;
 
-   if rgConsumo.ItemIndex = 0 then
-   begin
-    xResult:= xHoras * 0.60;
-    ShowMessage('Consumo Residência: R$ ' + CurrToStr(xResult));
-   end;
+    opComercio   :
+    begin
+      xResult:= (xHoras * 0.48)- xDesconto;
+      ShowMessage('Consumo Comércio : R$' + CurrToStr(xResult));
+    end;
 
-   if rgConsumo.ItemIndex = 1 then
-   begin
-    xResult:= xHoras * 0.48;
-    ShowMessage('Consumo Comércio : R$' + CurrToStr(xResult));
-   end;
+    opIndustria  :
+    begin
+      xResult:= (xHoras * 1.29)- xDesconto;
+      ShowMessage('Consumo Industria : R$ ' + CurrToStr(xResult));
+    end;
 
-     if rgConsumo.ItemIndex = 2 then
-   begin
-    xResult:= xHoras * 1.29;
-    ShowMessage('Consumo Industria : R$ ' + CurrToStr(xResult));
-   end;
-
-
-
+    opFazenda    :
+    begin
+      xResult:= (xHoras * 2.18)- xDesconto;
+      ShowMessage('Consumo Industria : R$ ' + CurrToStr(xResult));
+    end;
+    else
+    ShowMessage('Selecione uma opção');
+  end;
+  end
+  else
+    ShowMessage('Valor Inválido');
 end;
 
 end.
