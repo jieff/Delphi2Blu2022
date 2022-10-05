@@ -59,10 +59,10 @@ object frmConsumo: TfrmConsumo
     Font.Name = 'Tahoma'
     Font.Style = []
     Items.Strings = (
-      'Resid'#234'ncia R$ 0,60'
-      'Com'#233'rcio R$ 0,48'
-      'Industria R$ 1,29'
-      'Fazenda R$ 2,18')
+      'Resid'#234'ncia R$ 0,80'
+      'Com'#233'rcio R$ 0,68'
+      'Industria R$ 1,49'
+      'Fazenda R$ 3,18')
     ParentFont = False
     TabOrder = 0
   end

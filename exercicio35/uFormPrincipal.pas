@@ -48,27 +48,27 @@ begin
   case TEnumCliente(rgConsumo.ItemIndex) of
     opResidencia :
     begin
-       xResult:= (xHoras * 0.60)- xDesconto;
+       xResult:= (xHoras * 0.80)- xDesconto;
        ShowMessage('Consumo Residência: R$ ' + CurrToStr(xResult));
     end;
 
 
     opComercio   :
     begin
-      xResult:= (xHoras * 0.48)- xDesconto;
+      xResult:= (xHoras * 0.68)- xDesconto;
       ShowMessage('Consumo Comércio : R$' + CurrToStr(xResult));
     end;
 
 
     opIndustria  :
     begin
-      xResult:= (xHoras * 1.29)- xDesconto;
+      xResult:= (xHoras * 1.49)- xDesconto;
       ShowMessage('Consumo Industria : R$ ' + CurrToStr(xResult));
     end;
 
     opFazenda    :
     begin
-      xResult:= (xHoras * 2.18)- xDesconto;
+      xResult:= (xHoras * 3.18)- xDesconto;
       ShowMessage('Consumo Industria : R$ ' + CurrToStr(xResult));
     end;
     else
