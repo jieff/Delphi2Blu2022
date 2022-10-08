@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+  <Transactions>
+    <Transaction>2022/10/07 19:18:19.829,=C:\Users\jieffn\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2022/10/07 19:23:00.585,C:\Users\jieffn\Documents\Embarcadero\Studio\Projects\Heranca\UPrincipal.dfm=C:\Users\jieffn\Documents\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>2022/10/07 19:23:00.585,C:\Users\jieffn\Documents\Embarcadero\Studio\Projects\Heranca\UPrincipal.pas=C:\Users\jieffn\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2022/10/07 19:23:07.614,C:\Users\jieffn\Documents\Embarcadero\Studio\Projects\Heranca\OOP.dproj=C:\Users\jieffn\Documents\Embarcadero\Studio\Projects\Project17.dproj</Transaction>
+    <Transaction>2022/10/07 19:23:57.981,=C:\Users\jieffn\Documents\Embarcadero\Studio\Projects\Heranca\Unit1.pas</Transaction>
+    <Transaction>2022/10/07 19:24:20.804,C:\Users\jieffn\Documents\Embarcadero\Studio\Projects\Heranca\UAnimal.pas=C:\Users\jieffn\Documents\Embarcadero\Studio\Projects\Heranca\Unit1.pas</Transaction>
+    <Transaction>2022/10/07 19:51:57.383,=C:\Users\jieffn\Documents\Embarcadero\Studio\Projects\Heranca\Unit1.pas</Transaction>
+    <Transaction>2022/10/07 19:52:15.032,C:\Users\jieffn\Documents\Embarcadero\Studio\Projects\Heranca\UAnimais.pas=C:\Users\jieffn\Documents\Embarcadero\Studio\Projects\Heranca\Unit1.pas</Transaction>
+  </Transactions>
+</BorlandProject>
