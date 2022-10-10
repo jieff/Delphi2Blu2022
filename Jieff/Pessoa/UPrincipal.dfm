@@ -2,8 +2,8 @@ object frmPessoa: TfrmPessoa
   Left = 0
   Top = 0
   Caption = 'CLASSE PESSOA'
-  ClientHeight = 278
-  ClientWidth = 416
+  ClientHeight = 448
+  ClientWidth = 541
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -28,15 +28,15 @@ object frmPessoa: TfrmPessoa
     Caption = 'Data de Nascimento:'
   end
   object Label3: TLabel
-    Left = 232
+    Left = 264
     Top = 120
     Width = 33
     Height = 13
     Caption = 'Altura:'
   end
   object Label4: TLabel
-    Left = 131
-    Top = 16
+    Left = 176
+    Top = 24
     Width = 132
     Height = 19
     Caption = 'CLASSE PESSOA'
@@ -50,15 +50,15 @@ object frmPessoa: TfrmPessoa
   object edtNome: TEdit
     Left = 48
     Top = 72
-    Width = 305
+    Width = 409
     Height = 21
     TabOrder = 0
   end
   object btnBuscar: TButton
-    Left = 48
-    Top = 184
-    Width = 305
-    Height = 25
+    Left = 176
+    Top = 352
+    Width = 185
+    Height = 43
     Caption = 'Busca os Valores da Classe'
     TabOrder = 1
     OnClick = btnBuscarClick
@@ -66,15 +66,24 @@ object frmPessoa: TfrmPessoa
   object edtDataNascimento: TEdit
     Left = 48
     Top = 139
-    Width = 121
+    Width = 193
     Height = 21
     TabOrder = 2
   end
   object edtAltura: TEdit
-    Left = 232
+    Left = 264
     Top = 139
-    Width = 121
+    Width = 193
     Height = 21
     TabOrder = 3
+  end
+  object memo: TMemo
+    Left = 48
+    Top = 184
+    Width = 409
+    Height = 145
+    Lines.Strings = (
+      '')
+    TabOrder = 4
   end
 end

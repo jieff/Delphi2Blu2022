@@ -16,6 +16,7 @@ type
     edtDataNascimento: TEdit;
     edtAltura: TEdit;
     Label4: TLabel;
+    memo: TMemo;
     procedure btnBuscarClick(Sender: TObject);
   private
     { Private declarations }
@@ -36,12 +37,36 @@ uses
 procedure TfrmPessoa.btnBuscarClick(Sender: TObject);
 var
   xPessoa : TPessoa;
+  xData: Integer;
 begin
   xPessoa := nil;
-end;
+
   try
+   xPessoa:= TPessoa.Create;
+
+   xPessoa.nome:= edtNome.Text;
+   xPessoa.dataNascimento := StrToDate(edtDataNascimento.Text);
+   xPessoa.altura := StrToFloat(edtAltura.Text);
+
+   xData := trunc((Date - xPessoa.dataNascimento) / 365.25);
+
+   //xData:= xPessoa.idade;
+
+   xPessoa.altura:= StrToFloat(edtAltura.Text);
+
+   memo.Lines.add('######################');
+   memo.Lines.Add('');
+   memo.Lines.Add('Nome: ' + xPessoa.nome);
+   memo.Lines.Add('Data de Nascimento: ' + DateToStr(xPessoa.dataNascimento));
+   memo.Lines.Add('Altura: ' + FloatToStr(xPessoa.altura ));
+   memo.Lines.Add('');
+   memo.Lines.Add('######################');
+   memo.Lines.Add('');
+   memo.Lines.Add('Idade: '+ FloatToStr(xData));
 
   finally
-
+     freeandnil(xPessoa);
   end;
+end;
+
 end.
