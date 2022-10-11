@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <BorlandProject>
-  <Transactions>
-    <Transaction>2022/10/07 21:12:21.902,=C:\Users\jieffn\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
-    <Transaction>2022/10/07 21:13:29.065,C:\Users\jieffn\Documents\Delphi2Blu2022\Jieff\Pessoa\UPrincipal.dfm=C:\Users\jieffn\Documents\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
-    <Transaction>2022/10/07 21:13:29.065,C:\Users\jieffn\Documents\Delphi2Blu2022\Jieff\Pessoa\UPrincipal.pas=C:\Users\jieffn\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
-    <Transaction>2022/10/07 21:13:37.620,C:\Users\jieffn\Documents\Delphi2Blu2022\Jieff\Pessoa\Pessoa.dproj=C:\Users\jieffn\Documents\Embarcadero\Studio\Projects\Project17.dproj</Transaction>
-    <Transaction>2022/10/07 21:14:27.687,=C:\Users\jieffn\Documents\Delphi2Blu2022\Jieff\Pessoa\Unit1.pas</Transaction>
-    <Transaction>2022/10/07 21:14:46.769,C:\Users\jieffn\Documents\Delphi2Blu2022\Jieff\Pessoa\UPessoa.pas=C:\Users\jieffn\Documents\Delphi2Blu2022\Jieff\Pessoa\Unit1.pas</Transaction>
+	<Transactions>
+    <Transaction>2022/10/07 21:12:21.000.902,=C:\Users\jieffn\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2022/10/07 21:13:29.000.065,C:\Users\jieffn\Documents\Embarcadero\Studio\Projects\Unit1.pas=C:\Users\jieffn\Documents\Delphi2Blu2022\Jieff\Pessoa\UPrincipal.pas</Transaction>
+    <Transaction>2022/10/07 21:13:29.000.065,C:\Users\jieffn\Documents\Embarcadero\Studio\Projects\Unit1.dfm=C:\Users\jieffn\Documents\Delphi2Blu2022\Jieff\Pessoa\UPrincipal.dfm</Transaction>
+    <Transaction>2022/10/07 21:13:37.000.620,C:\Users\jieffn\Documents\Embarcadero\Studio\Projects\Project17.dproj=C:\Users\jieffn\Documents\Delphi2Blu2022\Jieff\Pessoa\Pessoa.dproj</Transaction>
+    <Transaction>2022/10/07 21:14:27.000.687,=C:\Users\jieffn\Documents\Delphi2Blu2022\Jieff\Pessoa\Unit1.pas</Transaction>
+    <Transaction>2022/10/07 21:14:46.000.769,C:\Users\jieffn\Documents\Delphi2Blu2022\Jieff\Pessoa\Unit1.pas=C:\Users\jieffn\Documents\Delphi2Blu2022\Jieff\Pessoa\UPessoa.pas</Transaction>
   </Transactions>
 </BorlandProject>
