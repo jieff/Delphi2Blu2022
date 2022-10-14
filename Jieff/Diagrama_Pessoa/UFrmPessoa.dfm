@@ -1,8 +1,8 @@
-object Form1: TForm1
+object frmPessoa: TfrmPessoa
   Left = 0
   Top = 0
-  Caption = 'Form1'
-  ClientHeight = 281
+  Caption = 'FORMUL'#193'RIO VALIDA CPF'
+  ClientHeight = 219
   ClientWidth = 418
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
@@ -14,11 +14,11 @@ object Form1: TForm1
   PixelsPerInch = 96
   TextHeight = 13
   object Label1: TLabel
-    Left = 88
-    Top = 48
-    Width = 31
+    Left = 80
+    Top = 53
+    Width = 23
     Height = 13
-    Caption = 'Label1'
+    Caption = 'CPF:'
   end
   object edtCPF: TEdit
     Left = 80
@@ -34,5 +34,6 @@ object Form1: TForm1
     Height = 25
     Caption = 'VALIDA CPF'
     TabOrder = 1
+    OnClick = btnCPFClick
   end
 end
