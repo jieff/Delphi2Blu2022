@@ -103,7 +103,7 @@ begin
     memo.Lines.Add('********************************');
 
   finally
-
+    freeandnil(xPessoa);
   end;
 
 end;
