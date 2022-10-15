@@ -2,7 +2,7 @@ program PessoaDiagrama;
 
 uses
   Vcl.Forms,
-  UFrmPessoa in 'UFrmPessoa.pas' {Form1},
+  UFrmPessoa in 'UFrmPessoa.pas' {frmPessoa},
   UPessoa in 'UPessoa.pas';
 
 {$R *.res}
@@ -10,6 +10,6 @@ uses
 begin
   Application.Initialize;
   Application.MainFormOnTaskbar := True;
-  Application.CreateForm(TForm1, Form1);
+  Application.CreateForm(TfrmPessoa, frmPessoa);
   Application.Run;
 end.

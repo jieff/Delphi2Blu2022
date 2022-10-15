@@ -11,10 +11,21 @@ type
     edtCPF: TEdit;
     btnCPF: TButton;
     Label1: TLabel;
+    Label2: TLabel;
+    edtCNPJ: TEdit;
+    btnCNPJ: TButton;
+    memo: TMemo;
+    edtNome: TEdit;
+    Label3: TLabel;
+    edtEndereco: TEdit;
+    Label4: TLabel;
+    btnSalvar: TButton;
     procedure btnCPFClick(Sender: TObject);
+    procedure btnCNPJClick(Sender: TObject);
+    procedure btnSalvarClick(Sender: TObject);
   private
     { Private declarations }
-    xPessoa : TPessoaFisica;
+
   public
     { Public declarations }
   end;
@@ -26,26 +37,74 @@ implementation
 
 {$R *.dfm}
 
+
+procedure TfrmPessoa.btnCNPJClick(Sender: TObject);
+var
+  xPessoaJuridica : TPessoa;
+  xCNPJ : string;
+begin
+
+  xPessoaJuridica:= nil;
+
+  try
+    xPessoaJuridica:= TPessoaJuridica.Create;
+    TPessoajuridica(xPessoaJuridica).cnpj := edtCNPJ.Text;
+
+    if ( TPessoaJuridica(xPessoaJuridica).IsValidCNPJ(TPessoaJuridica(xPessoaJuridica).cnpj)) then
+    memo.Lines.Add('O CNPJ: ' + TPessoaJuridica(xPessoaJuridica).cnpj + ' é válido.')
+    else
+    memo.Lines.Add('O CNPJ: ' + TPessoaJuridica(xPessoaJuridica).cnpj + ' não é válido.');
+
+
+  finally
+    FreeAndNil(xPessoaJuridica);
+  end;
+
+end;
+
 procedure TfrmPessoa.btnCPFClick(Sender: TObject);
 var
-  xPessoa: TPessoaFisica;
+  xPessoaFisica: TPessoa;
   xCPF: string;
 begin
-  xPessoa:= nil;
+  xPessoaFisica:= nil;
 
    try
-     xPessoa:= TPessoaFisica.Create;
-     xPessoa.FCPF:= edtCPF.Text;
+     xPessoaFisica:= TPessoaFisica.Create;
+     TPessoaFisica(xPessoaFisica).cpf := edtCPF.Text;
 
-   if ( xPessoa.IsValidCPF(xPessoa.FCPF)) then
-    ShowMessage('O CPF é válido.')
+   if ( TPessoaFisica(xPessoaFisica).IsValidCPF(TPessoaFisica(xPessoaFisica).cpf)) then
+    memo.Lines.Add('O CPF: ' + TPessoaFisica(xPessoaFisica).cpf +  ' é válido.')
    else
-    ShowMessage('O CPF não é válido.');
+    memo.Lines.Add('O CPF: ' + TPessoaFisica(xPessoaFisica).cpf + ' não é válido.');
 
    finally
-     freeandnil(xPessoa);
+     freeandnil(xPessoaFisica);
    end;
 
+
+end;
+
+procedure TfrmPessoa.btnSalvarClick(Sender: TObject);
+var
+   xPessoa : TPessoa;
+begin
+  xPessoa := nil;
+
+  try
+    xPessoa:= TPessoa.Create;
+    xPessoa.nome := edtNome.Text;
+    xPessoa.endereco := edtEndereco.Text;
+
+    //xPessoa.gravar(xPessoa.nome, xPessoa.endereco);
+
+    memo.Lines.Add('Nome: ' + xPessoa.nome);
+    memo.Lines.Add('Endereço: ' + xPessoa.Endereco);
+    memo.Lines.Add('********************************');
+
+  finally
+
+  end;
 
 end;
 
