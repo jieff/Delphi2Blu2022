@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodeSet version="1.0">
+  <view uin="etamjxx751i_v">
+    <property name="$defaultDiagram" value="true" />
+    <property name="$metaclass" value="Package Diagram" />
+    <property name="$name" value="default" />
+    <reference referencedUin="delphi:e_class:src:Bomba:UBomba.TfrmBombaCombustivel">
+      <property name="$shortcutReference" value="true" />
+      <property name="bounds" value="10,10,192,370" />
+      <reference referencedUin="delphi:e_field:src:Bomba:UBomba.TfrmBombaCombustivel.btnValor" />
+      <reference referencedUin="delphi:e_field:src:Bomba:UBomba.TfrmBombaCombustivel.btnLitro" />
+      <reference referencedUin="delphi:e_field:src:Bomba:UBomba.TfrmBombaCombustivel.btnAlterarValor" />
+      <reference referencedUin="delphi:e_field:src:Bomba:UBomba.TfrmBombaCombustivel.btnAlterarCombustivel" />
+      <reference referencedUin="delphi:e_field:src:Bomba:UBomba.TfrmBombaCombustivel.btnAlterarQunatidade" />
+      <reference referencedUin="delphi:e_field:src:Bomba:UBomba.TfrmBombaCombustivel.memo" />
+      <reference referencedUin="delphi:e_field:src:Bomba:UBomba.TfrmBombaCombustivel.rgTipo" />
+      <reference referencedUin="delphi:e_field:src:Bomba:UBomba.TfrmBombaCombustivel.edtValor" />
+      <reference referencedUin="delphi:e_field:src:Bomba:UBomba.TfrmBombaCombustivel.edtLitros" />
+      <reference referencedUin="delphi:e_field:src:Bomba:UBomba.TfrmBombaCombustivel.Label1" />
+      <reference referencedUin="delphi:e_field:src:Bomba:UBomba.TfrmBombaCombustivel.Label2" />
+      <reference referencedUin="delphi:e_method:src:Bomba:UBomba.TfrmBombaCombustivel.btnValorClick(System.TObject)" />
+      <reference referencedUin="delphi:e_method:src:Bomba:UBomba.TfrmBombaCombustivel.btnLitroClick(System.TObject)" />
+      <reference referencedUin="delphi:e_method:src:Bomba:UBomba.TfrmBombaCombustivel.btnAlterarValorClick(System.TObject)" />
+      <reference referencedUin="delphi:e_method:src:Bomba:UBomba.TfrmBombaCombustivel.btnAlterarCombustivelClick(System.TObject)" />
+      <reference referencedUin="delphi:e_method:src:Bomba:UBomba.TfrmBombaCombustivel.btnAlterarQunatidadeClick(System.TObject)" />
+      <reference referencedUin="delphi:e_method:src:Bomba:UBomba.TfrmBombaCombustivel.FormCreate(System.TObject)" />
+      <reference referencedUin="delphi:e_method:src:Bomba:UBomba.TfrmBombaCombustivel.FormClose(System.TObject,ref@System.UITypes.TCloseAction)" />
+      <reference referencedUin="delphi:e_field:src:Bomba:UBomba.TfrmBombaCombustivel.xValor" />
+    </reference>
+    <reference referencedUin="delphi:e_class:src:Bomba:UBomba.@unitclass">
+      <property name="$shortcutReference" value="true" />
+      <reference referencedUin="delphi:e_field:src:Bomba:UBomba.@unitclass.frmBombaCombustivel" />
+      <reference referencedUin="delphi:l_ast:src:Bomba:UBomba.@unitclass.frmBombaCombustivel" />
+    </reference>
+  </view>
+</nodeSet>

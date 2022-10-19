@@ -39,16 +39,18 @@ implementation
 
 { TBombaCombustivel }
 
+
+
 procedure TBombaCombustivel.abastecerPorLitro(const aValue: double);
 begin
-  FValorPorLitro := FValorPorLitro * aValue ;
+  FValorPorLitro := aValue ;
 
 end;
 
 procedure TBombaCombustivel.abastecerPorValor(const aValue: double);
 begin
   FValorPorLitro := aValue;
-  FValorPorLitro := FValorPorLitro * FQuantidade;
+  FValorPorLitro := (FValorPorLitro / FQuantidade);
 end;
 
 procedure TBombaCombustivel.alterarCombustivel(const aValue: string);
@@ -58,18 +60,16 @@ end;
 
 procedure TBombaCombustivel.alterarQuantidadeCombustivel(const aValue: double);
 begin
-  FQuantidade := aValue;
+    FValorPorLitro :=  aValue;
+
+
+
 end;
 
 procedure TBombaCombustivel.alterarValor(const aValue: double);
 begin
-  //FValorPorLitro := FValorPorLitro * aValue;
+    FValorPorLitro := aValue;
 
-    if FValorPorLitro > aValue then
-      FValorPorLitro := FValorPorLitro + aValue;
-
-    if FValorPorLitro < aValue then
-      FValorPorLitro := FValorPorLitro - aValue;
 end;
 
 function TBombaCombustivel.GetQuantidade: double;

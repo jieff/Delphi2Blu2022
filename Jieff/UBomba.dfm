@@ -11,6 +11,8 @@ object frmBombaCombustivel: TfrmBombaCombustivel
   Font.Name = 'Tahoma'
   Font.Style = []
   OldCreateOrder = False
+  OnClose = FormClose
+  OnCreate = FormCreate
   PixelsPerInch = 96
   TextHeight = 13
   object Label1: TLabel
@@ -61,14 +63,16 @@ object frmBombaCombustivel: TfrmBombaCombustivel
     Height = 25
     Caption = 'ALTERAR COMBUSTIVEL'
     TabOrder = 3
+    OnClick = btnAlterarCombustivelClick
   end
   object btnAlterarQunatidade: TButton
     Left = 32
     Top = 312
     Width = 193
     Height = 25
-    Caption = 'ALTERAR QUANTIDADE COMBISTIVEL'
+    Caption = 'ALTERAR QUANTIDADE COMBUSTIVEL'
     TabOrder = 4
+    OnClick = btnAlterarQunatidadeClick
   end
   object memo: TMemo
     Left = 264
