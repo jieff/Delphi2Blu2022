@@ -17,10 +17,12 @@ type
 
   public
     constructor Create(const aCapacidade: Integer; const aTotalAndares: Integer; const aTerreo : Integer = 0; const aVazio : Integer = 0);
+
     property Andar_Atual: Integer Read GetAndarAtual;
     property Total_Andares: Integer Read GetTotalAndares;
     property Capacidade_Max: Integer Read GetCapacidadeMax ;
     property QuantidadePessoas: Integer Read GetQuantidadePessoas;
+
     procedure Entra(aQtndEntrando : Integer);
     procedure Sai(aQtndSaindo : Integer);
     procedure Sobe(aAndar : Integer);
@@ -56,6 +58,9 @@ end;
 
 procedure TElevador.Entra(aQtndEntrando: Integer);
 begin
+
+  if True then
+
   if not (aQtndEntrando < (FCapacidadeMaxima - FQuantidadePessoas))  then
   begin
     raise Exception.Create('Quantidade Maxima já alcançada');

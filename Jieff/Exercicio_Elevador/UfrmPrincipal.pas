@@ -69,6 +69,8 @@ procedure TfrmPrincipal.btnEntrarClick(Sender: TObject);
 var
   xPessoas : integer;
 begin
+  if (FElevador = nil ) then
+    raise Exception.Create('Favor criar o elevador');
   xPessoas := StrToInt(inputBox('Quantidade de Pessoas', 'Informe a quantidade de entrantes', ''));
   lblPessoas.Caption := IntToStr(xPessoas);
 end;
