@@ -47,3 +47,28 @@ CREATE TABLE `atividade2`.`profile` (
   `status` TINYINT NULL)
 ENGINE = InnoDB
 DEFAULT CHARACTER SET = latin1;
+
+
+
+
+CREATE TABLE `devs2blu`.`dependentes` (
+  `cod_dependente` INT NOT NULL,
+  `cod_funcionario` INT NULL,
+  `grau_parentesco` VARCHAR(45) NOT NULL,
+  `data_nascimento` DATE NOT NULL,
+  `sexo` CHAR(5) NOT NULL,
+  `endereco` VARCHAR(145) NULL,
+  `complemento` VARCHAR(145) NULL,
+  `bairro` VARCHAR(45) NULL,
+  `cidade` VARCHAR(45) NULL,
+  `cep` VARCHAR(45) NULL,
+  `estado` VARCHAR(45) NULL,
+  `tipo_sanguineo` VARCHAR(5) NOT NULL,
+  PRIMARY KEY (`cod_dependente`))
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = latin1;
+
+
+
+
+
