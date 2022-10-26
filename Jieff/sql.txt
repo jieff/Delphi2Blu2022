@@ -1,0 +1,49 @@
+cod_cadastro : int
+nome_completo : varchar(255)
+idade : int
+data_nascimento : Date
+cpf : varchar(15)
+cnpj : varchar(20)
+
+
+
+rua                    : varchar(255) 
+numero                 : int
+complemento            : varchar
+cep                    : varchar
+cidade                 : varchar
+estado                 : char
+cod_cadastro           : int
+data_cadastro          : Date
+updated                : Datetime
+sexo                   : char(2)
+religiao               : char(20)
+cor                    : char(20)
+qi	                : char(255)	
+tipo_sanguineo         :char (3)
+doador                 : boolean 
+antecedentes_criminais : boollean
+escolaridade           : char(50)
+status                 : boolean
+
+CREATE TABLE `atividade2`.`profile` (
+  `rua` VARCHAR(255) NULL,
+  `numero` CHAR(10) NULL,
+  `complemento` CHAR(150) NULL,
+  `cep` VARCHAR(10) NULL,
+  `cidade` VARCHAR(50) NULL,
+  `estado` VARCHAR(20) NULL,
+  `cod_cadastro` INT NULL, PRIMARY KEY, AUTO_INCREMENT,
+  `data_cadastro` DATETIME NULL,
+  `updated` DATETIME NULL,
+  `sexo` CHAR(2) NULL,
+  `religiao` VARCHAR(20) NULL,
+  `cor` VARCHAR(20) NULL,
+  `qi` VARCHAR(50) NULL,
+  `tipo_sanquineo` VARCHAR(5) NULL,
+  `doador` TINYINT NULL,
+  `antecedentes_criminais` TINYINT NULL,
+  `escolaridade` VARCHAR(45) NULL,
+  `status` TINYINT NULL)
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = latin1;

@@ -29,6 +29,8 @@ type
         FNota2 : double;
         FProva : double;
         FTrabalho : double;
+        FMedia : double;
+
         function getMatricula: integer;
         function getNome: string;
         function getNota1: double;
@@ -40,6 +42,9 @@ type
         procedure setNota2(const Value: double);
         procedure setProva(const Value: double);
         procedure setTrabalho(const Value: double);
+        function getMedia: double;
+        procedure setMedia(const Value: double);
+
       public
 
         property nome : string read getNome write setNome;
@@ -48,6 +53,7 @@ type
         property nota2 : double read getNota1 write setNota2;
         property prova : double read getProva write setProva;
         property trabalho : double read getTrabalho write setTrabalho;
+        property media : double read getMedia write setMedia;
 
 
         procedure mediaFinal( aNota1, aNota2, aTrabalho : double );
@@ -66,31 +72,40 @@ implementation
 
 function TAluno.getMatricula: integer;
 begin
+  Result := FMatricula;
+end;
 
+function TAluno.getMedia: double;
+begin
+  Result := FMedia;
 end;
 
 function TAluno.getNome: string;
 begin
-
+  Result := FNome;
 end;
 
 function TAluno.getNota1: double;
 begin
-
+  Result := FNota1;
 end;
 
 function TAluno.getProva: double;
 begin
-
+  Result := FProva;
 end;
 
 function TAluno.getTrabalho: double;
 begin
-
+  Result := FTrabalho;
 end;
 
 procedure TAluno.mediaFinal(aNota1, aNota2, aTrabalho: double);
+
 begin
+  FNota1 := aNota1;
+  FNota2 := aNota2;
+  FTrabalho := aTrabalho;
 
 end;
 
@@ -102,6 +117,11 @@ end;
 
 
 procedure TAluno.setMatricula(const Value: integer);
+begin
+
+end;
+
+procedure TAluno.setMedia(const Value: double);
 begin
 
 end;
