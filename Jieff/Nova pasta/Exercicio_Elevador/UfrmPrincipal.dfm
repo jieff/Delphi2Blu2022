@@ -69,7 +69,7 @@ object frmPrincipal: TfrmPrincipal
   object Label2: TLabel
     Left = 221
     Top = 8
-    Width = 248
+    Width = 191
     Height = 42
     Alignment = taCenter
     Caption = 'ELEVADOR'
